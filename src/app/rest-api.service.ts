@@ -19,7 +19,7 @@ export class RestAPIService {
   postMapPin(pin: any) {
     const respo = '';
     const pinJson = "{\"pin\":"+pin+"}";
-    let url = "https://mu6czotm8h.execute-api.ap-southeast-2.amazonaws.com/prod/mappinlog";
+    let url = "https://******.execute-api.ap-southeast-2.amazonaws.com/prod/mappinlog";
     this.http.post(url, pinJson, this.httpOptions).subscribe(data => {
       
       return data.toString;
